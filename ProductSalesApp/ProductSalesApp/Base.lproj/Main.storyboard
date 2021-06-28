@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProductSalesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DBu-By-N52">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="105" id="pOc-qb-WwU" customClass="ProductCell" customModule="ProductSalesApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pOc-qb-WwU" id="tDc-jI-Ucb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ntd-pA-BEa">
+                                                    <rect key="frame" x="8" y="8" width="398" height="89"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prdouct Name: A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOx-Rv-ZR7">
+                                                            <rect key="frame" x="12" y="10" width="130.5" height="69"/>
+                                                            <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="18"/>
+                                                            <color key="textColor" red="0.91764705879999997" green="0.68235294120000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Countries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdQ-IQ-rPG">
+                                                            <rect key="frame" x="307" y="10" width="79" height="69"/>
+                                                            <fontDescription key="fontDescription" name="MyanmarSangamMN" family="Myanmar Sangam MN" pointSize="13"/>
+                                                            <color key="textColor" red="0.91764705879999997" green="1" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.24174956237377765" green="0.17744275566671988" blue="0.20836613453975339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="mdQ-IQ-rPG" secondAttribute="bottom" constant="10" id="2I5-ik-9ra"/>
+                                                        <constraint firstItem="mdQ-IQ-rPG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eOx-Rv-ZR7" secondAttribute="trailing" constant="8" id="5wo-p6-xdX"/>
+                                                        <constraint firstItem="eOx-Rv-ZR7" firstAttribute="leading" secondItem="Ntd-pA-BEa" secondAttribute="leading" constant="12" id="O0T-I1-oYS"/>
+                                                        <constraint firstItem="mdQ-IQ-rPG" firstAttribute="top" secondItem="Ntd-pA-BEa" secondAttribute="top" constant="10" id="izE-fU-Qv3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="eOx-Rv-ZR7" secondAttribute="bottom" constant="10" id="scj-Qt-Sp2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="mdQ-IQ-rPG" secondAttribute="trailing" constant="12" id="tj0-NP-hP0"/>
+                                                        <constraint firstItem="eOx-Rv-ZR7" firstAttribute="top" secondItem="Ntd-pA-BEa" secondAttribute="top" constant="10" id="z87-Nu-V8K"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Ntd-pA-BEa" secondAttribute="trailing" constant="8" id="Mff-ej-hkj"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ntd-pA-BEa" secondAttribute="bottom" constant="8" id="NSS-MW-0y7"/>
+                                                <constraint firstItem="Ntd-pA-BEa" firstAttribute="leading" secondItem="tDc-jI-Ucb" secondAttribute="leading" constant="8" id="ryT-sD-A64"/>
+                                                <constraint firstItem="Ntd-pA-BEa" firstAttribute="top" secondItem="tDc-jI-Ucb" secondAttribute="top" constant="8" id="sNY-iu-Qxm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="mainView" destination="Ntd-pA-BEa" id="fea-vF-MBB"/>
+                                            <outlet property="productName" destination="eOx-Rv-ZR7" id="HXo-KJ-R2P"/>
+                                            <outlet property="topCountries" destination="mdQ-IQ-rPG" id="D83-xD-moQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DBu-By-N52" secondAttribute="bottom" id="0ex-yP-nZh"/>
+                            <constraint firstItem="DBu-By-N52" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EHR-b9-421"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DBu-By-N52" secondAttribute="trailing" id="XCq-d9-VDE"/>
+                            <constraint firstItem="DBu-By-N52" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ubc-Fy-Eu9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainTableView" destination="DBu-By-N52" id="Vm5-MY-SWi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="73.660714285714278"/>
+        </scene>
+        <!--Top Countries View Controllers-->
+        <scene sceneID="Ns0-vP-Vow">
+            <objects>
+                <viewController storyboardIdentifier="TopCountriesViewControllers" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FXv-v8-r1W" customClass="TopCountriesViewControllers" customModule="ProductSalesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HPJ-xc-i2X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name : A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9d-ld-fpP">
+                                <rect key="frame" x="111" y="101" width="192" height="50.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="0.79194350469680064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name : A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghS-ZQ-vd4">
+                                <rect key="frame" x="20" y="226.5" width="142.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="0.79194350469680064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHN-eS-8wE">
+                                <rect key="frame" x="356.5" y="226.5" width="45.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="0.79194350469999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e64-TG-g76">
+                                <rect key="frame" x="181" y="52" width="52" height="2"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="10v-41-sLZ"/>
+                                    <constraint firstAttribute="width" constant="52" id="ERs-Qt-8K0"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcP-0z-pbg">
+                                <rect key="frame" x="151.5" y="156.5" width="111.5" height="42"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="19"/>
+                                <color key="textColor" red="0.74310593377976186" green="0.77753640518707479" blue="0.14118044068213223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eqX-KI-lLD"/>
+                        <color key="backgroundColor" red="0.5023952146776679" green="0.36505199614025297" blue="0.27747350160767431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uHN-eS-8wE" firstAttribute="centerY" secondItem="ghS-ZQ-vd4" secondAttribute="centerY" id="8lQ-nV-d1t"/>
+                            <constraint firstItem="e64-TG-g76" firstAttribute="top" secondItem="eqX-KI-lLD" secondAttribute="top" constant="8" id="DtV-fB-RdS"/>
+                            <constraint firstItem="ghS-ZQ-vd4" firstAttribute="leading" secondItem="eqX-KI-lLD" secondAttribute="leading" constant="20" id="Edn-aY-d2O"/>
+                            <constraint firstItem="GcP-0z-pbg" firstAttribute="top" secondItem="t9d-ld-fpP" secondAttribute="bottom" constant="5" id="HyI-tQ-pK8"/>
+                            <constraint firstItem="t9d-ld-fpP" firstAttribute="top" secondItem="eqX-KI-lLD" secondAttribute="top" constant="57" id="SA6-tW-4hO"/>
+                            <constraint firstItem="e64-TG-g76" firstAttribute="centerX" secondItem="HPJ-xc-i2X" secondAttribute="centerX" id="Ulj-fK-ZsG"/>
+                            <constraint firstItem="eqX-KI-lLD" firstAttribute="trailing" secondItem="uHN-eS-8wE" secondAttribute="trailing" constant="12" id="VDZ-ho-YEk"/>
+                            <constraint firstItem="uHN-eS-8wE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ghS-ZQ-vd4" secondAttribute="trailing" constant="8" id="Xb0-FJ-fWl"/>
+                            <constraint firstItem="GcP-0z-pbg" firstAttribute="centerX" secondItem="t9d-ld-fpP" secondAttribute="centerX" id="iSJ-AH-g6b"/>
+                            <constraint firstItem="t9d-ld-fpP" firstAttribute="centerX" secondItem="HPJ-xc-i2X" secondAttribute="centerX" id="oJy-vR-Xrd"/>
+                            <constraint firstItem="ghS-ZQ-vd4" firstAttribute="top" secondItem="t9d-ld-fpP" secondAttribute="bottom" constant="75" id="vZx-2r-X9U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryName" destination="ghS-ZQ-vd4" id="T0M-wf-v1B"/>
+                        <outlet property="productName" destination="t9d-ld-fpP" id="ebK-Yj-ue8"/>
+                        <outlet property="totalSales" destination="uHN-eS-8wE" id="wtZ-9z-f5Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ix5-Mw-ZwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.56521739130437" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+</document>
